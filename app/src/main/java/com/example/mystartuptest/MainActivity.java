@@ -6,6 +6,7 @@ import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
@@ -22,6 +23,8 @@ public class MainActivity extends AppCompatActivity {
         helloWorldText = findViewById(R.id.mainText);
         changeTextMainbtn = findViewById(R.id.mainButton);
         fuckingdonewiththis = findViewById(R.id.stopButton);
+
+        String url ="https://api.chucknorris.io/jokes/random";
 
         helloWorldText.setText("FUCK");
 
@@ -44,6 +47,10 @@ public class MainActivity extends AppCompatActivity {
 
                     }
                 });
+
+        MyApiCall myApiCall = new MyApiCall();
+
+        myApiCall.makeChuckNorrisJokeCall(helloWorldText,url,this);
 
             }
 

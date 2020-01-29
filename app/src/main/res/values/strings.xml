@@ -3,4 +3,7 @@
     <string name="mainText">FUCK</string>
     <string name="mainButton">free McNuggets</string>
     <string name="stopButton">pLeAsE eNd Me</string>
+    <string name="mainPicture">mainPicture</string>
+    <string name="picture">picture</string>
+    <string name="image">img</string>
 </resources>
