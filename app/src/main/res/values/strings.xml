@@ -6,4 +6,5 @@
     <string name="mainPicture">mainPicture</string>
     <string name="picture">picture</string>
     <string name="image">img</string>
+    <string name="nextButton">next</string>
 </resources>
