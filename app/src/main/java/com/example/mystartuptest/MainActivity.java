@@ -24,7 +24,6 @@ public class MainActivity extends AppCompatActivity {
         changeTextMainbtn = findViewById(R.id.mainButton);
         fuckingdonewiththis = findViewById(R.id.stopButton);
 
-        String url ="https://api.chucknorris.io/jokes/random";
 
         helloWorldText.setText("FUCK");
 
@@ -48,9 +47,9 @@ public class MainActivity extends AppCompatActivity {
                     }
                 });
 
+        String url ="https://api.chucknorris.io/jokes/random";
         MyApiCall myApiCall = new MyApiCall();
-
-        myApiCall.makeChuckNorrisJokeCall(helloWorldText,url,this);
+        myApiCall.makeChuckNorrisJokeCall(helloWorldText,url,getApplicationContext());
 
             }
 
